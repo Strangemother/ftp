@@ -1,0 +1,17 @@
+{
+    "banner": "Welcome to test 1",
+    "working_directory": ".",
+    "listen_ip": "0.0.0.0",
+    "listen_port": 9044,
+    "udp_port": 9200,
+    "max_connections": 128,
+    "max_user_connections": 10,
+    "version": "0.1",
+    "read_throttle": 102400,
+    "write_throttle": 102400,
+    "users": {
+        "user": "pass",
+        "test1": "pass1"
+    }
+
+}
