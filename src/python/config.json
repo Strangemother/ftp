@@ -12,6 +12,6 @@
     "users": {
         "user": "pass",
         "test1": "pass1"
-    }
-
+    },
+    "basedir": "./_root"
 }

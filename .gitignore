@@ -1,4 +1,3 @@
 *.pyc
 src/python/wenv/
 src/python/env/
-src/python/bin/

@@ -1,6 +1,7 @@
-from pyftpdlib._compat import PY3, u, unicode, property
+from pyftpdlib._compat import u, unicode, property
 from pyftpdlib.filesystems import AbstractedFS
 import os
+
 
 class UserFS(AbstractedFS):
     def __init__(self, root, cmd_channel):
@@ -16,12 +17,13 @@ class UserFS(AbstractedFS):
         # are responsible to set _cwd attribute as necessary.
         print 'File System mounted'
         self._cwd = u('/')
-        self._root = self.set_jail(root, cmd_channel)
+        self._root = self.create_jail(root, cmd_channel)
         self.cmd_channel = cmd_channel
 
-    def set_jail(self, root, cmd_channel):
+    def create_jail(self, root, cmd_channel):
         username = cmd_channel.username
-        jpath = os.path.join(root, username)
+        basedir = self.config.basedir
+        jpath = os.path.join(basedir, root, username)
         if os.path.exists(jpath) is not True:
             os.makedirs(jpath)
         return jpath
