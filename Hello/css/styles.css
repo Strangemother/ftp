@@ -1,0 +1,13 @@
+/* CSS file placeholder. */
+
+/*
+Percent field on a download item
+ */
+.collection li.collection-item .row .col.s6.percent {
+  padding: 0;
+}
+
+.collection .collection-item .progress {
+  position: relative;
+  top: -10px;
+}
