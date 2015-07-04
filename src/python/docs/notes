@@ -1,0 +1,10 @@
+New User
+
+agreed connection
+agreed secret
+
+
+serve data
+
+entry           client connects to ftp
+get list        client collects ftp list

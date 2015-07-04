@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 node_modules/
+=======
+*.pyc
+src/python/wenv/
+src/python/env/
+>>>>>>> 36a65af09dcd821258e9fb85c6d9e13684caaa8c
